@@ -174,13 +174,13 @@ export default function Home() {
   const advance = (nextLevel: number, newAnger: number, cleared: boolean) => {
     if (cleared) setClearedTurns(c => c + 1);
     if (newAnger >= 100 || curTurn >= targetTurns) {
-      setTimeout(() => setPage('result'), 22000);
+      setTimeout(() => setPage('result'), 12000);
     } else {
       setTimeout(() => {
         setCurTurn(t => t + 1);
         setProvoke(pick(nextLevel));
         setRespText(''); setFeedback(null);
-      }, 22000);
+      }, 12000);
     }
   };
 
