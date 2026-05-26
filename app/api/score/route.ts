@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
   }
   try {
     const msg = await client.messages.create({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-sonnet-4-5',
       max_tokens: 256,
       system: `あなたはアンガーマネジメントトレーニングの評価AIです。
 挑発に対する返答を3軸で評価し、必ずJSONのみで返してください。前置き・説明・マークダウン不要。
